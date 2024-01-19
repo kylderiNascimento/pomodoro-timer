@@ -13,7 +13,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   border: 0;
   margin: 8px;
 
-  background-color: ${props => props.theme['green-500']};
+  background-color: ${props => props.theme['purple-500']};
   color: ${props => props.theme.white};
 
 `;
