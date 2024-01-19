@@ -4,7 +4,8 @@ Projeto desenvolvido em JS (React + TS) para controlar o tempo de trabalho.
 
 Bibliotecas utilizadas:
 
-- [styled-components](https://styled-components.com/docs) - CSS in JS
+- [Styled Components](https://styled-components.com/docs) - CSS in JS
+- [React Router DOM](https://reactrouter.com/en/main)
 
 ## Expanding the ESLint configuration
 
