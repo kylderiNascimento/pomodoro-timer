@@ -20,16 +20,23 @@ const formValidationData = zod.object({
     .number()
     .min(5, 'O ciclo precisa ser de no mínimo 5 minutos.')
     .max(60, 'O ciclo precisa ser de no máximo 60 minutos.'),
-})
+});
+
+// Tipando os inputs do formulário - obs: podemos tbem fazer isso por através do zod
+interface typeFormData {
+  task: string,
+  minutesAmount: number
+}
 
 export function Home() {
 
-  const { register, handleSubmit, watch } = useForm({
+  const { register, handleSubmit, watch, reset } = useForm<typeFormData>({
     resolver: zodResolver(formValidationData),
   });
 
   function handleCreateNewCycle(data: any) {
-    console.log(data)
+    console.log(data);
+    reset(); // Resetar o formulário
   }
 
   const task = watch('task')
