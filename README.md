@@ -9,6 +9,7 @@ Bibliotecas utilizadas:
 - [Phosphor React](https://phosphoricons.com/) - Pacotes de ícones
 - [React Hook Form](https://react-hook-form.com/) - Forms controlled e uncontrolled
 - [Zod](https://github.com/colinhacks/zod) - Validação de formulários - obs: Necessário instalar o [Hook Form Resolve](https://www.npmjs.com/package/@hookform/resolvers) para integrar o React Hook Form as libs de validações como o Zod.
+- [Date FNS](https://date-fns.org/) utilizamos para calcular o tempo entre datas. O setInterval não é tão preciso para calcularmos segundos, por isso utilizamos essa lib.  
 
 
 ## Instalação
